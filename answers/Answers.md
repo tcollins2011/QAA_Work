@@ -89,11 +89,9 @@
     zcat /projects/bgmp/shared/2017_sequencing/demultiplexed/19_3F_fox_S14_L008_R1_001.fastq.gz | grep '^AGATCGGAAGAGCACACGTCTGAACTCCAGTCA' | wc -l
 
 
-
-
 Plot the trimmed read length distributions for both R1 and R2 reads (on the same plot). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. 
 ### Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates.
-        asl;dhfasdj;fh
+        I would expect R2 to be trimmed more extensively tahn R1. 
 
 ## Part 3 – Alignment and strand-specificity
 
@@ -101,7 +99,6 @@ Plot the trimmed read length distributions for both R1 and R2 reads (on the same
         Genome name: Mus_musculus.GRCm39.dna.primary_assembly.fa
 
         GTF name: Mus_musculus.GRCm39.104.gtf
-
 
 
 Count reads that map to features using htseq-count. You should run htseq-count twice: once with --stranded=yes and again with --stranded=no. Use default parameters otherwise.
