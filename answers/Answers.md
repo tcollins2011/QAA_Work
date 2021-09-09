@@ -89,9 +89,16 @@
     zcat /projects/bgmp/shared/2017_sequencing/demultiplexed/19_3F_fox_S14_L008_R1_001.fastq.gz | grep '^AGATCGGAAGAGCACACGTCTGAACTCCAGTCA' | wc -l
 
 
-Plot the trimmed read length distributions for both R1 and R2 reads (on the same plot). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. 
+## Mean Distribution Graphs
+
+### 7_2E_Fox Graphs
+![](7_2E_fox__R1_trimmed_adptrmv.fq.gz_vs_7_2E_fox__R2_trimmed_adptrmv.fq.gz_Length_Distribution.png)
+
+### 19_3F_Fox Graphs
+![](19_3F_fox_R1_trimmed_adptrmv.fq.gz_vs_19_3F_fox_R2_trimmed_adptrmv.fq.gz_Length_Distribution.png)
+
 ### Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates.
-        I would expect R2 to be trimmed more extensively tahn R1. 
+        I would expect R2 to be trimmed more extensively than R1 due to the fact that R2 had a lower quality score on average. This should result in more results from R2 having bp that need to be removed becuase they are unreliable. This also appears to be supported by graphs that show that read 2 has less full length reads tahn read 1 for both runs. 
 
 ## Part 3 – Alignment and strand-specificity
 
